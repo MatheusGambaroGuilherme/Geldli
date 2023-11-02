@@ -1,0 +1,101 @@
+:root{
+    --roxo: #4246A4;
+    --branco: #E8E9F7;
+    --preto: #263238;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(fonts/coolvetica\ rg.otf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--branco);
+    background-color: var(--branco);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--roxo);
+    font-size: 30px;
+    padding: 30px;
+    
+}
+
+main{
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+.logo{
+    width: 20px;
+}
+
+.mainDiv{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.geldli{
+    font-family: Coolvetica, sans-serif;
+}
+
+#mainDivRoxo button{
+    border: #E8E9F7 solid 0px;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 17px;
+    padding: 7px;
+    color: var(--preto);
+}
+
+#tituloMain{
+    font-size: 40px;
+}
+
+.boxItens{
+    height: 300px;
+    width: 300px;
+}
+
+#mainDivRoxo{
+    background-color: var(--roxo);
+}
+
+#mainDivBranco{
+    background-color: var(--branco);
+    color: var(--preto);
+    font-size: 15px;
+    text-align: center;
+}
+
+#mainDivBranco button{
+    border: var(--roxo) solid 0px;
+    background-color: var(--roxo);
+    border-radius: 17px;
+    font-weight: 900;
+    font-size: 17px;
+    padding: 8px;
+    color: var(--branco);
+}
+
+#footerContent{
+    position: absolute;
+    z-index: 1;
+}
+
+#waveFundo{
+    position: absolute;
+    z-index: 0;
+}
