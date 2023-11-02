@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(../fonts/coolvetica\ rg.otf);
+}
+
+body{
+    margin: 0;
+    background: rgb(38,40,78);
+    background: linear-gradient(120deg, rgba(38,40,78,1) 0%, rgba(67,71,168,1)83%);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--roxo);
+    font-size: 30px;
+    padding: 30px;
+    color: #E8E9F7;
+}
+
+.logo{
+    width: 20px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.boxMain{
+    width: 300px;
+    height: auto;
+    background-color: #E8E9F7;
+    padding: 10px;
+}
+
+.titulo{
+    font-family: Coolvetica, sans-serif;
+    font-size: 30px;
+    color: #263238;
+}
+
