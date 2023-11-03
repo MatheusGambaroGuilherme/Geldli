@@ -8,127 +8,350 @@
 
 @font-face {
     font-family: Coolvetica;
-    src: url(fonts/coolvetica\ rg.otf);
+    src: url(../fonts/coolvetica\ rg.otf);
 }
 
 body{
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
     color: var(--branco);
-    background-color: var(--branco);
+    background-color: var(--roxo);
     
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    text-align: center;
     background-color: var(--roxo);
-    font-size: 30px;
-    padding: 30px;
-    
+    font-size: 2.5rem;
+    padding: 2%;
+    align-items: center;
 }
 
-main{
-    font-size: 20px;
+header > a 
+{
+    width: 4%;
+}
+
+#logoHeader
+{
+    letter-spacing: 1px;
+}
+
+#logo{
+    width: 8%;
+}
+
+#iconeConta
+{
     width: 100%;
-    margin: 0;
-}
-
-.logo{
-    width: 20px;
-}
-
-.mainDiv{
-    width: 100%;
-    
-    display: flex;
-    justify-content: space-around;
-    
 }
 
 .geldli{
     font-family: Coolvetica, sans-serif;
 }
 
-#mainDivRoxo button{
-    padding-top: 30px;
-    border: #E8E9F7 solid 0px;
-    border-radius: 15px;
-    font-weight: 900;
-    font-size: 17px;
-    padding: 7px;
-    color: var(--preto);
-}
-
-#tituloMain{
-    font-size: 40px;
-}
-
-.boxItens{
-    margin-top: 30px;
-    height: 300px;
-    width: 300px;
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
 }
 
 #mainDivRoxo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
     background-color: var(--roxo);
+}
+
+#div-left
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5%;
+}
+
+#tituloMain{
+    font-size: 5rem;
+    letter-spacing: 1px;
+    margin: 0%;
+    margin-bottom: 0%;
+}
+
+#div-left > p#slogan
+{
+    font-size: 2rem;
+    margin-bottom: 5%;
+    max-width: 550px;
+}
+
+#div-right
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgMaleta
+{
+    width: 50%;
+}
+
+#mainDivRoxo button{
+    padding-top: 0%;
+    border: #E8E9F7 solid 0px;
+    border-radius: 15px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 1%;
+    width: 60%;
+    color: var(--preto);
+    cursor: pointer;
+}
+
+#waveDiagonal
+{
+    background-color: var(--branco);
+    margin-top: 3%;
 }
 
 #mainDivBranco{
     background-color: var(--branco);
     color: var(--preto);
     font-size: 15px;
+    margin-top: 0%;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+}
+
+#div-left-branco
+{
+    padding-left: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#div-left-branco > img
+{
+    width: 80%;
+}
+
+#div-right-branco
+{
+    padding-right: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div#logo
+{
+    flex-direction: row;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoLight
+{
+    width: 7%;
+}
+
+
+#div-right-branco > p
+{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    max-width: 700px;
+    margin-bottom: 8%;
+}
+
+#btnDivBranco
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
 #mainDivBranco button{
     border: var(--roxo) solid 0px;
     background-color: var(--roxo);
     border-radius: 17px;
+    text-transform: uppercase;
+    width: 80%;
     font-weight: 900;
-    font-size: 17px;
-    padding: 8px;
+    font-size: 1.3rem;
+    padding: 1.5%;
+    cursor: pointer;
     color: var(--branco);
 }
 
-footer{
-    margin-top: 30px;
-    position: relative;
-}
-.imageFooter{
+#waveFooter
+{
+    background-color: var(--branco);
     width: 100%;
-    justify-content: center;
+}
+
+footer{
+    margin-top: -18%;
+    width: 100%;
     display: flex;
-    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
-.footerContent{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-    height: 50%; 
-    z-index: 1;
+footer > img{
+    width: 10%;
+}	
+
+footer > p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 3%;
+    letter-spacing: 0.8px;
 }
 
+@media screen and (max-width: 850px)  {
 
-@media screen and (max-width: 767px) {
-    .mainDiv{
-        display: flex;
+    header > a 
+    {
+        width: 6%;
+    }
+
+    #mainDivRoxo{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .footerContent p{
+    #div-left
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0%;
+    }
+
+    #div-right
+    {
         display: none;
     }
 
-    .footerContent img{
-        width: 50px;
+    #mainDivBranco
+    {
+        height: 900px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #div-left-branco
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0%;
+    }
+
+    #div-left-branco > img
+    {
+        width: 60%;
+    }
+
+    #div-right-branco
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0%;
+    }
+
+    #div-right-branco > p
+    {
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 700px)  
+{
+    #logoLight
+    {
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 581px)  
+{
+
+    #logoLight
+    {
+        width: 10%;
+    }
+
+    #div-left
+    {
+        text-align: center;
+    }
+
+    header > a 
+    {
+        width: 10%;
+    }
+
+    #mainDivRoxo button{
+        width: 90%;
+    }
+
+    #mainDivBranco button{
+        width: 90%;
+    }
+
+    footer > p{
+        font-size: 0.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 3%;
+        letter-spacing: 0.8px;
+    }
+}
+
+@media screen and (max-width: 470px)  
+{
+
+    #logoLight
+    {
+        width: 12%;
     }
 }
