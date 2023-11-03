@@ -1,0 +1,34 @@
+:root{
+    --roxo: #4246A4;
+    --branco: #E8E9F7;
+    --preto: #263238;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(../fonts/coolvetica\ rg.otf);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.logo{
+    width: 30px;
+}
+
+body{
+    background-color: var(--branco);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.geldli{
+    font-family: Coolvetica, sans-serif;
+}
