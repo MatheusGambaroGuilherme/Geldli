@@ -8,8 +8,10 @@
 body{
     margin: 0;
     background: rgb(38,40,78);
-    background: linear-gradient(120deg, rgba(38,40,78,1) 0%, rgba(67,71,168,1)83%);
+    background: linear-gradient(273deg, rgba(38,40,78,1), rgba(67,71,168,1));
     font-family: 'Noto Sans', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header{
@@ -23,19 +25,28 @@ header{
 }
 
 .logo{
-    width: 20px;
+    width: 30px;
 }
 
 main{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    align-content: center;
 }
 
 .boxMain{
-    width: 300px;
-    height: auto;
+    justify-content: center;
+    width: 30vw;
+    height: 500px;
     background-color: #E8E9F7;
-    padding: 10px;
+    padding: 15px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo{
@@ -44,3 +55,75 @@ main{
     color: #263238;
 }
 
+.textInput{
+    border: none;
+    padding-left: 10px;
+    border-radius: 14px;
+    width: 90%;
+    height: 37px;
+    background-color: #D3D6ED;
+}
+
+.textInput::placeholder{
+    color: #263238;
+    opacity: 70;
+}
+
+input[type=submit]{
+    border: none;
+    border-radius: 25px;
+    background-color: #4246A4;
+    color: #E8E9F7;
+    font-size: medium;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#googleBtn{
+    border: none;
+    border-radius: 25px;
+    background-color: #D3D6ED;
+    padding: 10px;
+    color: #263238;
+    opacity: 70;
+}
+
+#entrar{
+    width: 40%;
+}
+
+#cadastrar{
+    width: 50%;
+}
+
+input{
+    width: 90%;
+    margin: 7px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxMain{
+        margin-bottom: 30px;
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boxMain{
+        margin-bottom: 30px;
+        width: 60vw;
+    }
+}
