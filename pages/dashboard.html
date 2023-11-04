@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Geldli</title>
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <title>Dashboard - Geldli</title>
 </head>
 <body class="container">
     <header>
@@ -19,13 +18,13 @@
     <aside>
         <div id="home">
             <img src="../images/login/icon-email.svg" alt="Botão Home" id="iconeHome">
-            <p>Home</p>
+            <a href="home.html">
+                <p>Home</p>
+            </a>
         </div>
         <div id="dashboard">
             <img src="../images/login/icon-email.svg" alt="Botão Home" id="iconeDashboard">
-            <a href="dashboard.html">
-                <p>Dashboard</p>
-            </a>
+            <p>Dashboard</p>
         </div>
         <div id="relatorios">
             <img src="../images/login/icon-email.svg" alt="Botão Home" id="iconeRelatorios">
@@ -34,33 +33,40 @@
     </aside>
     <main>
         <div id="div-top">
-            <h1>Bem vindo de volta, Bruno!</h1>
+            <h1>Controle suas despesas e ativos</h1>
+            <button> + Adicionar</button>
         </div>
         <section>
             <div id="div-left">
-                <div id="Top">
-                    <div class="titulo">
-                        <img src="../images/login/icon-email.svg" alt="">
-                        <h1>Próximas contas</h1>
-                    </div>
+                <div class="titulo">
+                    <h2>Despesas</h2>
+                </div>
+                <div id="despesasTop">
+
                 </div>
                 <div class="bg-linha">
                     <div class="linha">
+
                     </div>
                 </div>
-                <div id="Bot">
-                    <div class="titulo">
-                        <img src="../images/login/icon-email.svg" alt="">
-                        <h1>Resumo de atividades recentes</h1>
-                    </div>
+                <div id="despesasBot">
+
                 </div>
             </div>
             <div id="div-right">
-                <div id="patrimonio">
-                    <h1>Patrimônio</h1>
-                    <div id="valor">
-                        <p>R$ 7.500,00</p>
+                <div class="titulo">
+                    <h2>Ativos</h2>
+                </div>
+                <div id="ativosTop">
+
+                </div>
+                <div class="bg-linha">
+                    <div class="linha">
+                    
                     </div>
+                </div>
+                <div id="ativosBot">
+
                 </div>
             </div>
         </section>

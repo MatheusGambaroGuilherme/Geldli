@@ -1,0 +1,323 @@
+:root{
+    --roxo: #4246A4;
+    --branco: #E8E9F7;
+    --preto: #263238;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: Coolvetica;
+    src: url(../fonts/coolvetica\ rg.otf);
+}
+
+html, body
+{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--branco);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container 
+{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 8fr;
+}
+
+/*HEADER*/
+
+header
+{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 2.5rem;
+    background-color: var(--branco);
+    color: var(--roxo);
+}
+
+header > a 
+{
+    width: 4%;
+}
+
+#logoHeader
+{
+    letter-spacing: 1px;
+}
+
+#logo{
+    width: 8%;
+}
+
+#iconeConta
+{
+    width: 100%;
+}
+
+.geldli{
+    font-family: Coolvetica, sans-serif;
+}
+
+/*ASIDE*/
+
+aside
+{
+    width: 16%;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+
+#home
+{
+    width: 80%;
+    height: 6%;
+    background-color: #4245a4cb;
+    color: var(--branco);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#home:hover
+{
+    color: var(--branco);
+    background-color: #4245a4;
+    cursor: pointer;
+}
+
+#iconeHome
+{
+    width: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+a
+{
+    width: 100%;
+    text-decoration: none;
+    color: var(--roxo);
+}
+
+#dashboard
+{
+    width: 80%;
+    height: 6%;
+    color: var(--branco);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#dashboard:hover
+{
+    background-color: #4245a4;
+    cursor: pointer;
+}
+
+#dashboard:hover  > a
+{
+    color: var(--branco);
+}
+
+
+#iconeDashboard
+{
+    width: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#relatorios
+{
+    width: 80%;
+    height: 6%;
+    background-color: var(--branco);
+    color: var(--roxo);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#relatorios:hover
+{
+    background-color: #4245a4;
+    color: var(--branco);
+    cursor: pointer;
+}
+
+#iconeRelatorios
+{
+    width: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*MAIN*/
+
+main
+{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+#div-top
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: 4%;
+}
+
+#div-top > h1
+{
+    font-weight: 700;
+    width: 50%;
+    color: var(--preto);
+    font-size: 2.5rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+section
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#div-left
+{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo
+{
+    color: var(--preto);
+    margin-left: 3%;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.titulo > img{
+    width: 5%;
+    margin-right: 2%;
+}
+
+div#Top
+{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0px 0px 0px;
+    background-color: rgb(211, 214, 237);
+}
+
+.bg-linha
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 214, 237);
+}
+
+.linha
+{
+    width: 80%;
+    height: 2px;
+    border-radius: 20px;
+    background-color: var(--roxo);
+}
+
+div#Bot
+{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0px 0px 0px 20px;
+    background-color: rgb(211, 214, 237);
+}
+
+#div-right
+{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(211, 214, 237);
+    border-radius: 0px 20px 20px 0px;
+    height: 90%;
+}
+
+div#patrimonio
+{
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#patrimonio > h1
+{
+    text-transform: uppercase;
+    color: var(--preto);
+    font-size: 1.5rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#valor
+{
+    margin-top: 5%;
+    font-weight: 600;
+    width: 70%;
+    height: 100%;
+    background-color: var(--roxo);
+    color: var(--branco);
+    font-size: 1.2rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#valor > p
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
