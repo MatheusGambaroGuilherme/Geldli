@@ -141,6 +141,14 @@ a
     color: var(--branco);
 }
 
+#dashboard > span{
+    color: var(--roxo);
+}
+
+#dashboard:hover  > span
+{
+    color: var(--branco);
+}
 
 #iconeDashboard
 {
