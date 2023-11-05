@@ -5,45 +5,102 @@
     src: url(../fonts/coolvetica\ rg.otf);
 }
 
+:root{
+    --roxo: #4246A4;
+    --branco: #E8E9F7;
+    --preto: #263238;
+}
+
 body{
+    width: 100vw;
+    height: 100vh;
     margin: 0;
+    padding: 0;
     background: rgb(38,40,78);
     background: linear-gradient(273deg, rgba(38,40,78,1), rgba(67,71,168,1));
     font-family: 'Noto Sans', sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: var(--branco);
 }
 
 header{
     display: flex;
     justify-content: space-between;
-    text-align: center;
-    background-color: var(--roxo);
-    font-size: 30px;
-    padding: 30px;
-    color: #E8E9F7;
+    font-size: 2.5rem;
+    padding: 2%;
+    align-items: center;
 }
 
-.logo{
-    width: 30px;
+#home
+{
+    font-size: 2.5rem;
+    width: 13%;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#home > div{
+    display: flex;
+    align-items: center;
+}
+
+header > a 
+{
+    width: 4%;
+}
+
+#logoHeader
+{
+    letter-spacing: 1px;
+}
+
+#logo{
+    width: 20%;
+}
+
+#iconeConta
+{
+    width: 100%;
+}
+
+.geldli{
+    font-family: Coolvetica, sans-serif;
 }
 
 main{
+    width: 100%;
+    height: 80%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
 .boxMain{
-    justify-content: center;
-    width: 30vw;
-    height: 500px;
+    width: 30%;
+    height: 90%;
     background-color: #E8E9F7;
-    padding: 15px;
+    text-align: center;
+    padding: 1%;
+}
+
+#div-left
+{
+    margin-right: 10%;
+}
+
+.boxMain > p 
+{
+    color: var(--preto);
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: start;
+    padding-left: 1%;
 }
 
 form{
+    width: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,42 +108,64 @@ form{
 
 .titulo{
     font-family: Coolvetica, sans-serif;
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #263238;
 }
 
 .textInput{
+    margin: 0%;
+    margin-top: 3%;
     border: none;
-    padding-left: 10px;
     border-radius: 14px;
     width: 90%;
-    height: 37px;
+    height: 10%;
     background-color: #D3D6ED;
+    padding-left: 2%;
+
 }
 
-.textInput::placeholder{
-    color: #263238;
-    opacity: 70;
-}
+input::placeholder {
+    color: var(--preto) !important;
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: 80% !important;
+    padding-left: 2%;
+  }
 
 input[type=submit]{
+    cursor: pointer;
     border: none;
     border-radius: 25px;
     background-color: #4246A4;
     color: #E8E9F7;
     font-size: medium;
     text-transform: uppercase;
-    padding: 10px;
+    width: 90%;
+    height: 10%;    
     font-weight: bold;
+    margin-top: 5%;
+}
+
+form > p
+{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--preto);
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 #googleBtn{
+    width: 90%;
+    height: 10%;
+    cursor: pointer;
     border: none;
     border-radius: 25px;
     background-color: #D3D6ED;
-    padding: 10px;
-    color: #263238;
-    opacity: 70;
+    color: var(--preto) !important;
+    font-weight: 700;
+    font-size: 1rem;
+    opacity: 80% !important;
 }
 
 #entrar{
@@ -102,28 +181,85 @@ input{
     margin: 7px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    main{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .boxMain{
-        margin-bottom: 30px;
-        width: 40vw;
+@media screen and (max-width: 1024px) {
+    #logo
+    {
+        width: 25%;
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 875px) {
+
+    #logo
+    {
+        width: 40%;
+    }
+
     main{
-        display: flex;
+        margin-top: 5%;
         flex-direction: column;
         align-items: center;
+        justify-content: start;
+        height: 150%;
     }
 
     .boxMain{
-        margin-bottom: 30px;
-        width: 60vw;
+        width: 60%;
+        margin: 0%;
+    }
+
+    #div-left
+    {
+        margin-right: 0%;
+        height: 45%;
+        margin-bottom: 10%;
+    }
+
+    #div-right
+    {
+        height: 45%;
+    }
+
+    header > a 
+    {
+        width: 8%;
+    }
+
+    #iconeConta
+    {
+        width: 100%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #logo
+    {
+        width: 55%;
+    }
+}
+
+
+@media screen and (max-width: 437px) {
+
+    #logo
+    {
+        width: 65%;
+    }
+
+    .boxMain{
+        width: 80%;
+        margin: 0%;
+    }
+
+    header > a 
+    {
+        width: 10%;
+    }
+
+    #iconeConta
+    {
+        width: 100%;
+        margin-right: 2%;
     }
 }
