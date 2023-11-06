@@ -25,9 +25,22 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    background-color: var(--roxo);
     font-size: 2.5rem;
     padding: 2%;
+    align-items: center;
+}
+
+#home
+{
+    font-size: 2.5rem;
+    width: 13%;
+    text-decoration: none;
+    color: var(--branco);
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#home > div{
+    display: flex;
     align-items: center;
 }
 
@@ -42,7 +55,7 @@ header > a
 }
 
 #logo{
-    width: 8%;
+    width: 20%;
 }
 
 #iconeConta
@@ -242,7 +255,50 @@ footer > p{
     letter-spacing: 0.8px;
 }
 
+@media screen and (max-width: 1024px) {
+    #logo
+    {
+        width: 25%;
+    }
+}
+@media screen and (max-width: 875px) {
+
+    #logo
+    {
+        width: 40%;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    #logo
+    {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 437px) {
+
+    #logo
+    {
+        width: 65%;
+    }
+}
+
 @media screen and (max-width: 850px)  {
+
+    #div-left
+    {
+        text-align: center;
+    }
+
+    #mainDivRoxo button{
+        width: 90%;
+    }
+
+    #mainDivBranco button{
+        width: 90%;
+    }
 
     header > a 
     {
